@@ -1,0 +1,53 @@
+body{
+background-color:white;
+color:rgb(255, 247, 251);
+font-family: Verdana,sans-serif;
+}
+
+li{
+  list-style:none;
+  float:left;
+  padding: 33px 20px 33px 20px;
+}
+
+span{
+  color:rgb(87, 86, 86);
+}
+
+.logo{
+  float:left;
+  height: 70px;
+  padding: 10px 10px 10px 15px;
+}
+
+.header{
+  color:rgb(255, 184, 216);
+  font-size:65px;
+  height:90px;
+}
+
+.header-list{
+  font-size: 20px;
+  float:left;
+}
+
+.header-list li{
+  list-style:none;
+  float:left;
+  color:#333;
+}
+
+.main{
+  height:700px;
+ 
+}
+
+.clear{
+  clear: both;
+}
+
+.footer{
+  background-color:rgb(255, 184, 216);
+  height:150px;
+  color:rgb(87, 86, 86)
+}
