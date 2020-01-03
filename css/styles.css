@@ -4,6 +4,8 @@ color:rgb(255, 247, 251);
 font-family: Verdana,sans-serif;
 }
 
+
+
 li{
   list-style:none;
   float:left;
@@ -37,6 +39,10 @@ span{
   color:#333;
 }
 
+.header-list li:hover{
+  background-color:palevioletred;
+  cursor: pointer;
+}
 .main{
   height:700px;
  
