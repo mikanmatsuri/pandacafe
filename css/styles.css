@@ -134,7 +134,6 @@ label, input, textarea, select, option {
 }
 
 .lang-con li a:hover{
-    cursor: pointer;
     color: #549544;
     text-shadow: 1px 1px 1px #fcf0da;
     border-bottom: none;
