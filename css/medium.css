@@ -1,0 +1,251 @@
+@media screen and (max-aspect-ratio:8/10) {
+    /*-------------------------------------------------------共通*/
+    
+    .header-img-gradient,.top-menu-gradient,.top-menu-box,.top-menu,.lang-con,.flower-cut,.black-flower{
+        display: none;
+    }
+
+    label, input, textarea, select, option {
+        font-size:calc(100vw / (1920 / 22));
+    }
+
+    .page-title{
+        font-size:calc(100vw/(1920 / 180));
+        color:#579444;
+        text-shadow:none;
+    }
+
+
+/* 1枚目　home画面 */
+    .page-box{
+        width:calc(100vw/(1920/1770));
+        height: calc(100vw / 0.55);
+        padding-right: 0vw;
+        padding-left:0vw;
+    }
+
+    .header-logo{
+        background-size:cover;
+        background-image:url(/img/logo2.png);
+        position: absolute;
+        top:calc(100vw/(1920 / 10));
+        left:calc(100vw/(1920 / 10));
+        width:calc(100vw/(1920/350));
+        height:calc(100vw/(1920/350));
+    }
+
+    /* 背景画像の設定 */
+    .header-img{
+        background-image: url(/img/background-sma.png);
+        background-size: cover;
+        width: 100vw;
+        height: calc(100vw / 0.56);
+        position: relative;
+    }
+    
+    .smartphone-top-menu-button{
+        background-image: url(/img/bars_24.png);
+        background-size: cover;
+        width: calc(100vw / (1920 / 300));
+        height: calc(100vw / (1920 / 300));
+        position: absolute;
+        right: calc(100vw / (1920 / 5));
+        top: calc(100vw / (1920 / 5));
+    }
+
+    .twetter-top-icon{
+        background-image: url(/img/Twitter_Logo_WhiteOnImage.png);
+        background-size: cover;
+        width: calc(100vw / (1920 / 300));
+        height: calc(100vw / (1920 / 300));
+        position: absolute;
+        right: calc(100vw / (1920 / 5));
+        bottom: calc(100vw / (1920 / 5));
+    }
+
+/* 2枚目　about */
+    .about-font{
+        width:calc(100vw / (1920 / 1770));
+        margin-top: calc(100vw/(1920/400));
+    }
+
+    .cheff-comment{
+        font-size:calc(100vw/(1920 / 60));
+        color:#393637;
+    }
+    .cheff,.cheff-name {
+        font-weight:bold;
+        font-size:calc(100vw/(1920 / 60)) ;
+    }
+
+    .panda-comment{
+        margin-left:calc(100vw/(1920 / 30));
+        font-size:calc(100vw/(1920 / 65));
+    }
+    
+    .about-font h2{
+        font-size:calc(100vw/(1920 / 80));
+        color:#393637;
+        margin-bottom: calc(100vw/(1920/300));
+        margin-left:calc(100vw/(1920/150));
+    }
+
+    .alignt-right{
+        margin-top: calc(100vw/(1920/200));
+        margin-right:calc(100vw/(1920/150)) ;
+    }
+
+    .about-panda{
+        background-size:cover;
+        background-image:url(/img/panda-tentyo_mu.png);
+        width:calc(100vw/(1920/400));
+        height:calc(100vw/(1920/500));
+        float:right;
+        margin-top: calc(100vw/(1920/100));
+        margin-right:calc(100vw/(1920/150));
+        margin-bottom:calc(100vw/(1920/500));
+    }
+
+    .green-flower{
+            /*backgroundサイズとイメージで画像を指定*/
+    background-size:cover;
+    background-image:url(/img/smartphone-green-flower.png);
+    /*widthとhightで要素の表示サイズを指定*/
+    float:right;
+    margin-top: calc(100vw/(1920/100));
+    }
+
+    /* 3枚目　 news*/
+    .news-font,.news-font h2,.twitter-style a,.page-box-news,.page-title-news{
+        display: none;
+    }
+
+    /* 4枚目　menu */
+    .menu-font h2{
+        font-size:calc(100vw/(1920 / 80));
+        color:#393637;
+        margin-bottom: calc(100vw/(1920/200));
+        margin-left:calc(100vw/(1920/50));
+    }
+
+    .menu-image{
+        background-image: url(/img/coffee-munu-comment.png);
+        background-size:cover;
+        width: calc(100vw/(1920/1100));
+        height:calc(100vw/(1920/1500));
+        margin-left:calc(100vw/(1920/10));
+    }
+
+    .menu-cafe-image{
+        background-image: url(/img/coffee-munu-image.png);
+        background-size:cover;
+        width: calc(100vw/(1920/650));
+        height:calc(100vw/(1920/1100));
+        margin-left: calc(100vw/(1920/900));
+        margin-top: calc(100vw/(1920/50));
+    }
+
+    /* 5枚目　order */
+    .order-font h2{
+        margin-top: calc(100vw/(1920/50));
+        font-size:calc(100vw/(1920 / 80));
+        color:#393637;
+        margin-left:calc(100vw/(1920/50));
+    }
+
+    .form-box{
+        color:#393637;
+        margin-left:calc(100vw/(1920/50));
+    }
+
+    .form-font{
+        font-size:calc(100vw/(1920 /90));
+        margin-top: calc(100vw/-(1920/200));
+    }
+
+    .label-box{
+        margin-top:calc(100vw/(1920 /120)) ;
+    
+    }
+    
+    .label-line{
+        font-size: calc(100vw/(1920/90));
+        width: calc(100vw/(1920 / 400));
+        height:calc(100vw/(1920 / 100));
+        float: left;
+    }
+    .label-line2{
+        font-size: calc(100vw/(1920/80));
+        width: calc(100vw/(1920 /1200));
+        height:calc(100vw/(1920 /200));
+        float: right;
+        margin-bottom:calc(100vw/(1920 / 20));
+        margin-right: 0;
+        margin-left: calc(100vw/(1920 / 5));
+    }
+
+    .label-line3{
+        font-size: calc(100vw/(1920/80));
+        width: calc(100vw/(1920 / 1000));
+        height:calc(100vw/(1920 / 200));
+        float: right;
+        margin-right:calc(100vw/(1920 / 200));
+        margin-bottom:calc(100vw/(1920 / 30));
+    }
+    
+    .label-comment{
+        font-size: calc(100vw/(1920/80));
+        width: calc(100vw/(1920 / 1200));
+        height:calc(100vw/(1920 / 500));
+        float: right;
+        margin-left: calc(100vw/(1920 / 5));
+        margin-bottom:calc(100vw/(1920 / 90));
+        margin-right: 0;
+    }
+
+
+    /* 6枚目　contact */
+    .contact-font{
+        font-size:calc(100vw/(1920 / 80));
+        color:#393637;
+        margin-top: calc(100vw/(1920/500));
+    }
+
+    .contact-font h2{
+        font-size:calc(100vw/(1920 / 80));
+        color:#393637;
+        margin-left:calc(100vw/(1920/150));
+    }
+
+    .ggrmaps iframe{
+        margin-top: calc(100vw/(1920/100));
+        margin-bottom: calc(100vw/(1920/130));
+        margin-left:calc(100vw/(1920/100));
+        width: calc(100vw/(1920/1550));
+        height: calc(100vw/(1920/1400));
+    }
+    
+    
+    /*会社情報*/
+    .company-name{
+        margin-top: calc(100vw/(1920/200));
+        font-size: calc(100vw/(1920 / 80));
+    }
+    .company-box{        
+        margin-bottom: calc(100vw/(1920/120));
+    }
+    .concept-name{
+        color:#579444;
+    }
+
+    .addres-name{
+        padding-bottom: calc(100vw/(1920/30));
+    }
+
+    .copyright {
+        float:right;
+        margin-top:calc(100vw/(1920/-2));
+        color:white;
+        margin-right:calc(100vw/(1920/10));
+    }
+}
