@@ -2,23 +2,27 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>ホーム/pandacafe</title>
+        <title>Home</title>
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <!-- 画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scare=1.0">
         <link rel="icon" href=img/favicon.png>
-        <meta name="discription" content="pandacafeのホーム画面です。">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scare=1.0">
-<!-- 画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->             
         <link rel="stylesheet" href="css/medium.css">
         <script src="js/main.js"></script>
     </head>
 
     <body>
-        <!-- ★1枚目★ -->
+        <!------------------------------ ホーム画面　1枚目 ------------------------------->
         <div class="header-img">
             <div class="smartphone-top-menu-button"></div>
             <div class="twetter-top-icon">
             </div>
+        </div>
+        <!--黒い模様-->
+        <div class="flower-cut">
+            <div class="black-flower"></div>
         </div>
         <!--header-imgグラデーションのdiv-->
         <div class="header-img-gradient"></div>
@@ -27,26 +31,53 @@
         <!--top-menuグラデーションのdiv-->
         <div class="top-menu-gradient"></div>
         <div class="top-menu-box" id="top-menu-id"></div>
+
         <ul class="top-menu">
-            <li>about</li>
-            <li>news</li>
-            <li>menu</li>
-            <li>order</li>
+            <li>
+                <a href="#about-jump">
+                    <span class="text-jp">パンダカフェとは</span>
+                    <span class="text-en">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#news-jump">
+                    <span class="text-jp">お知らせ</span>
+                    <span class="text-en">News</span>
+                </a>
+            </li>
+            <li>
+                <a href="#menu-jump">
+                    <span class="text-jp">お品書き</span>
+                    <span class="text-en">Menu</span>
+                </a>
+            </li>
+            <li>
+                <a href="#order-jump">
+                    <span class="text-jp">宴会の予約</span>
+                    <span class="text-en">Order</span>
+                </a>
+            </li>
         </ul>
         <ul class="lang-con">
-            <li>language</li>
+            <li>
+                <a href="#">
+                    <span class="text-jp">Language</span>
+                    <span class="text-en">言語切替</span>
+                </a>
+            </li>
             <li>|</li>
-            <li>contact</li>
+            <li>
+                <a href="#shop-place-jump">
+                    <span class="text-jp">所在地</span>
+                    <span class="text-en">Contacts</span>
+                </a>
+            </li>
         </ul>
-
-        <div class="flower-cut">
-            <div class="black-flower"></div>
-        </div>
 
         <!-- 2枚目 -->
         <div class="page-box about-box"> 
             <div class="about-font">
-                <h1 class="page-title">about</h1>
+                <h1 class="page-title" id="about-jump">About</h1>
                 <h2>panda cafeとは</h2>
                 <div class ="green-flower">
                     <div class="panda-comment">
@@ -67,7 +98,7 @@
         <!-- 3枚目 -->
         <div class="page-box-news"> 
             <div class="news-font">
-                <h1 class="page-title-news">news</h1>
+                <h1 class="page-title-news" id="news-jump">News</h1>
                 <h2>お知らせ</h2>
             </div>
             <div class="twitter-style">
@@ -88,7 +119,7 @@
         <!-- 4枚目 -->
         <div class="page-box"> 
             <div class="menu-font">
-                <h1 class="page-title">menu</h1>
+                <h1 class="page-title" id="menu-jump">Menu</h1>
                 <h2>お品書き</h2>
             </div>
             <div class="menu-image"></div>
@@ -100,8 +131,8 @@
         <!-- 5枚目 -->
         <div class="page-box"> 
             <div class="order-font">
-                <h1 class="page-title">order</h1>
-                <h2>予約する</h2>
+                <h1 class="page-title" id="order-jump">Order</h1>
+                <h2>宴会の予約</h2>
             </div>
             <div class="menu-flower"></div>
             <!-- formの作成 -->
@@ -174,7 +205,7 @@
         <!-- 6枚目 -->
         <div class="page-box"> 
             <div class="contact-font">
-                <h1 class="page-title">contact</h1>
+                <h1 class="page-title" id="shop-place-jump">Contacts</h1>
                 <h2>所在地</h2>
             </div>
             <div class="ggrmaps">
@@ -204,7 +235,7 @@
             </div>
         </div>
         <div class="clear"></div>
-     <!--   <div class="menu-flower"></div> -->
+
     
         <!-- 7枚目 -->
         <div class ="footer-gradient"></div>

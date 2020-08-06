@@ -7,15 +7,21 @@
 .page-title{
     font-size:calc(100vw/(1920 / 60));
     color:#579444;
-    text-shadow:1px 1px 0 #393637, -1px -1px 0 #FFF,
-    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-    0px 1px 0 #FFF,  0-1px 0 #FFF,
-    -1px 0 0 #FFF, 1px 0 0 #FFF;
+    text-shadow:1px 1px 0 #393637, -1px -1px 0 #fcf7ee,
+    -1px 1px 0 #fcf7ee, 1px -1px 0 #fcf7ee,
+    0px 1px 0 #fcf7ee,  0-1px 0 #fcf7ee,
+    -1px 0 0 #fcf7ee, 1px 0 0 #fcf7ee;
+}
+
+/*英語をデフォルトで非表示にする*/
+.text-en{
+    display: none;
 }
 
 body {
     overflow-x:hidden;
     font-size:calc(100vw / (1920 / 13));
+    background-color: #fcf7ee;
 }
 
 label, input, textarea, select, option {
@@ -32,7 +38,7 @@ label, input, textarea, select, option {
 .header-img-gradient{
     width:100vw;
     height:calc(100vw / (1920 / 90));
-    background: linear-gradient( rgba(0, 0, 0, 0), rgb(255, 255, 255));
+    background: linear-gradient( rgba(0, 0, 0, 0), rgb(252, 247, 238));
     position: absolute;
     top:calc((100vw / 1.8) - (100vw / (1920 / 90)));
 }
@@ -76,7 +82,7 @@ label, input, textarea, select, option {
 }
 
 .top-menu{
-    color:white;
+    color:#FFFFFF;
     font-size:calc(100vw/(1920 / 20));
     position: absolute;
     top:0vw;
@@ -89,14 +95,28 @@ label, input, textarea, select, option {
 .top-menu li{
     float:left;
     margin:calc(100vw/(1920/30)) calc(100vw/(1920/80));
+
+}
+
+.top-menu li a{
+    text-decoration: none;
+    color: #fcf0da;
+    font-size: calc(100vw/(1920/25));
+}
+
+.top-menu li a:hover{
+    cursor: pointer;
+    color: #549544;
+    text-shadow: 1px 1px 1px #fcf0da;
+    border-bottom: none;
 }
 
 .lang-con{
-    color:white;
+    color:#fcf7ee;
     font-size:calc(100vw/(1920 / 20));
     position: absolute;
     top:calc(100vw/(1920/115));
-    right:0vw;
+    right:0;
     width:calc(100vw/(1920/400));
     height:calc(100vw/(1920/90));
     list-style-type: none;
@@ -105,6 +125,18 @@ label, input, textarea, select, option {
 .lang-con li{
     float:right;
     padding:calc(100vw/(1920/2)) calc(100vw/(1920/8));
+}
+
+.lang-con li a{
+    text-decoration: none;
+    color: #fcf0da;
+    font-size: calc(100vw/(1920/25));
+}
+
+.lang-con li a:hover{
+    color: #549544;
+    text-shadow: 1px 1px 1px #fcf0da;
+    border-bottom: none;
 }
 
 .black-flower{
