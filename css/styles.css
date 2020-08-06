@@ -76,7 +76,7 @@ label, input, textarea, select, option {
 }
 
 .top-menu{
-    color:white;
+    color:#FFFFFF;
     font-size:calc(100vw/(1920 / 20));
     position: absolute;
     top:0vw;
@@ -89,10 +89,24 @@ label, input, textarea, select, option {
 .top-menu li{
     float:left;
     margin:calc(100vw/(1920/30)) calc(100vw/(1920/80));
+
+}
+
+.top-menu li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: calc(100vw/(1920/25));
+}
+
+.top-menu li a:hover{
+    cursor: pointer;
+    color: #549544;
+    border-bottom: none;
+
 }
 
 .lang-con{
-    color:white;
+    color:#FFFFFF;
     font-size:calc(100vw/(1920 / 20));
     position: absolute;
     top:calc(100vw/(1920/115));
