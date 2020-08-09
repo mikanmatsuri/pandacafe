@@ -3,9 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Home</title>
-        <meta http-equiv="Cache-Control" content="no-cache">
         <!-- 画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scare=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
         <link rel="icon" href=img/favicon.png>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -14,10 +13,12 @@
     </head>
 
     <body>
-        <!------------------------------ ホーム画面　1枚目 ------------------------------->
+        <!--  ホーム画面　1枚目  -->
         <div class="header-img">
             <div class="smartphone-top-menu-button"></div>
-            <div class="twetter-top-icon">
+            <div class="twitter-top-icon">
+                <a href="https://twitter.com/dpm_natsu?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @dpm_natsu</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
         <!--黒い模様-->
@@ -79,19 +80,22 @@
             <div class="about-font">
                 <h1 class="page-title" id="about-jump">About</h1>
                 <h2>panda cafeとは</h2>
-                <div class ="green-flower">
-                    <div class="panda-comment">
-                        <span class ="cheff-comment">こんにちは。店長の笹パンダです。<br><br>いつも当店をご利用頂き、ありがとうございます。<br><br><br>当店のコンセプトはパンダの為のパンダによるcafeであります。<br><br>私たちの主食といえば皆様ご存じの通り笹ですが、<br><br>その笹によって我々の命が脅かされているのも周知の事実。<br><br>私たちは、そういった我々の過酷な現実と現状を打開し、<br><br>また、今後も皆様にcafeを楽しんで頂けるように努めていき、<br><br>panda社会の問題と食の情報を発信してまいります。</span>
-                        <br/><br/>
-                        <div class="alignt-right">
-                            <span class="cheff">店長</span>
-                            <span class="cheff-name">笹パンダ</span>
-                        </div>
-                    </div>
-                    <div class="about-panda"></div>
-                    <div class="clear"></div>
+            </div>
+            <div class ="green-flower">
+                <div class="panda-comment">
+                    <span class ="cheff-comment">こんにちは。店長の笹パンダです。<br>
+                        いつも当店をご利用頂き、ありがとうございます。<br><br>
+                        当店のコンセプトはパンダの為のパンダによるcafeであります。<br>
+                        私たちの主食といえば皆様ご存じの通り笹ですが、<br>
+                        その笹によって我々の命が脅かされているのも周知の事実。<br>
+                        私たちは、そういった我々の過酷な現実と現状を打開し、<br>
+                        また、今後も皆様にcafeを楽しんで頂けるように努めていき、<br>
+                        panda社会の問題と食の情報を発信してまいります。</span>
+                    <br/><br/>
                 </div>
-            </div>       
+                <div class="about-panda"></div>
+                <div class="clear"></div>
+            </div>
         </div>
         <div class="clear"></div>
 
@@ -102,16 +106,14 @@
                 <h2>お知らせ</h2>
             </div>
             <div class="twitter-style">
-                <blockquote class="twitter-tweet">
-                    <p lang="ja" dir="ltr">
-                        パンダカフェ、本日も10時〜19時まで営業しております。皆様のご来店お待ちしております。
-                    </p>
-                    &mdash; パンダ店長 (@uJFUmo1USomfqa8)
-                    <a href="https://twitter.com/uJFUmo1USomfqa8/status/1224962394880786432?ref_src=twsrc%5Etfw">
-                        February 5, 2020
-                    </a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js"></script>
+                <span class="pc-twitter">
+                    <a class="twitter-timeline" href="https://twitter.com/dpm_natsu?ref_src=twsrc%5Etfw">Tweets by dpm_natsu</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </span>
+                <span class=" smartphone-twitter">
+                    <a href="https://twitter.com/dpm_natsu?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @dpm_natsu</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </span>
             </div>
         </div>
         <div class="clear"></div>
@@ -122,9 +124,26 @@
                 <h1 class="page-title" id="menu-jump">Menu</h1>
                 <h2>お品書き</h2>
             </div>
-            <div class="menu-image"></div>
-            <div class="clear"></div>
+            <div class="food-menu">
+                <nav>
+                    <h3>本日のおすすめ</h3>
+                    <ul>
+                        Drink
+                        <li>panda tea     ・・・500</li>
+                        <li>panda cofee   ・・・500</li>
+                    </ul>
+                    <br>
+                    <ul>
+                        Food
+                        <li>panda cake     ・・・500</li>
+                        <li>panda pan   ・・・500</li>
+                        <li>panda sarada   ・・・500</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="food-menu-line-spacing-adjustment"></div>
             <div class="menu-cafe-image"></div>
+            <div class="clear"></div>
         <!--    <div class="menu-flower"></div> -->
         </div>
                 
@@ -212,23 +231,30 @@
                 <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.9443806920704!2d139.67465211553804!3d35.62909764043606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f4c6dc7a8ddf%3A0xce87d71ced082924!2z44CSMTU0LTAwMDMg5p2x5Lqs6YO95LiW55Sw6LC35Yy66YeO5rKi77yT5LiB55uu77yZ4oiS77yZIOOCouODvOODjeOCuemHjuayog!5e0!3m2!1sja!2sjp!4v1580302054391!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
                 <div class="company-name">
                     <div class="company-box">
-                        <span class="concept-name">CAFE&BACARY</span><br><span class="cafe-name">PANDA CAFE</span>
+                        <span class="concept-name">CAFE&BACARY</span>
+                        <br>
+                        <span class="cafe-name">PANDA CAFE</span>
                     </div>
                     <div class="addres-name">
-                        <span>〒xxx-xxxx 東京都 世田谷区 xxxxxxxxx</span><br><span>学芸大学駅から徒歩5分</span>
+                        <span>〒xxx-xxxx 東京都 世田谷区 xxxxxxxxx</span>
+                        <span>学芸大学駅から徒歩5分</span>
                     </div>
                     <div class="matome">
                         <div class="tel-nunber">
-                            <span>電話番号</span><span>03-xxxx-xxxx</span>
+                            <span>電話番号</span>
+                            <span>03-xxxx-xxxx</span>
                         </div>
                         <div class="open-hour">
-                            <span>営業時間</span><span>10:00-18:00</span>
+                            <span>営業時間</span>
+                            <span>10:00-18:00</span>
                         </div>
                         <div class="holiday">
-                            <span>定休日</span><span>水・日</span>
+                            <span>定休日</span>
+                            <span>水・日</span>
                         </div>
                         <div class="parking">
-                            <span>駐車場</span><span>5台有</span>
+                            <span>駐車場</span>
+                            <span>5台有</span>
                         </div>
                     </div>
                 </div>
@@ -241,7 +267,7 @@
         <div class ="footer-gradient"></div>
         <footer class="footer-box">
             <div class="footer-logo"></div>
-            <span class="copyright">Copyright 2020 PANDA CAFE All Rights Reserved.</span>
+            <div class="copyright">Copyright 2020 PANDA CAFE All Rights Reserved.</div>
             <div class="clear"></div>
         </footer>
     </body>

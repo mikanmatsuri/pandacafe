@@ -1,6 +1,6 @@
 @media screen and (max-aspect-ratio:8/10) {
     /*-------------------------------------------------------共通*/
-    
+
     .header-img-gradient,.top-menu-gradient,.top-menu-box,.top-menu,.lang-con,.flower-cut,.black-flower{
         display: none;
     }
@@ -18,15 +18,13 @@
 
 /* 1枚目　home画面 */
     .page-box{
-        width:calc(100vw/(1920/1770));
-        height: calc(100vw / 0.55);
         padding-right: 0vw;
         padding-left:0vw;
     }
 
     .header-logo{
         background-size:cover;
-        background-image:url(/img/logo2.png);
+        background-image:url(../img/logo2.png);
         position: absolute;
         top:calc(100vw/(1920 / 10));
         left:calc(100vw/(1920 / 10));
@@ -36,41 +34,36 @@
 
     /* 背景画像の設定 */
     .header-img{
-        background-image: url(/img/background-sma.png);
+        background-image: url(../img/background-sma.png);
         background-size: cover;
-        width: 100vw;
         height: calc(100vw / 0.56);
         position: relative;
     }
     
     .smartphone-top-menu-button{
-        background-image: url(/img/bars_24.png);
+        background-image: url(../img/bars_24.png);
         background-size: cover;
-        width: calc(100vw / (1920 / 300));
-        height: calc(100vw / (1920 / 300));
+        width: calc(100vw / (1920 / 350));
+        height: calc(100vw / (1920 / 350));
         position: absolute;
         right: calc(100vw / (1920 / 5));
         top: calc(100vw / (1920 / 5));
     }
 
-    .twetter-top-icon{
-        background-image: url(/img/Twitter_Logo_WhiteOnImage.png);
-        background-size: cover;
+    .twitter-top-icon{
         width: calc(100vw / (1920 / 300));
-        height: calc(100vw / (1920 / 300));
         position: absolute;
-        right: calc(100vw / (1920 / 5));
         bottom: calc(100vw / (1920 / 5));
+        display: initial;
     }
 
 /* 2枚目　about */
     .about-font{
-        width:calc(100vw / (1920 / 1770));
         margin-top: calc(100vw/(1920/400));
     }
 
     .cheff-comment{
-        font-size:calc(100vw/(1920 / 60));
+        font-size:calc(100vw/(1920 / 55));
         color:#393637;
     }
     .cheff,.cheff-name {
@@ -80,24 +73,27 @@
 
     .panda-comment{
         margin-left:calc(100vw/(1920 / 30));
+        margin-right: calc(100vw/(1920 / 60));
         font-size:calc(100vw/(1920 / 65));
+        float: none;
     }
     
     .about-font h2{
         font-size:calc(100vw/(1920 / 80));
         color:#393637;
-        margin-bottom: calc(100vw/(1920/300));
+        margin-bottom: calc(100vw/(1920/200));
         margin-left:calc(100vw/(1920/150));
     }
 
     .alignt-right{
+        display: inline-block;
         margin-top: calc(100vw/(1920/200));
         margin-right:calc(100vw/(1920/150)) ;
     }
 
     .about-panda{
         background-size:cover;
-        background-image:url(/img/panda-tentyo_mu.png);
+        background-image:url(../img/panda-tentyo_mu.png);
         width:calc(100vw/(1920/400));
         height:calc(100vw/(1920/500));
         float:right;
@@ -109,10 +105,9 @@
     .green-flower{
             /*backgroundサイズとイメージで画像を指定*/
     background-size:cover;
-    background-image:url(/img/smartphone-green-flower.png);
+    background-image:url(../img/smartphone-green-flower.png);
     /*widthとhightで要素の表示サイズを指定*/
     float:right;
-    margin-top: calc(100vw/(1920/100));
     }
 
     /* 3枚目　 news*/
@@ -121,46 +116,80 @@
     }
 
     /* 4枚目　menu */
+    .menu-font{
+        margin-top: calc(100vw/(1920/400));
+    }
+
     .menu-font h2{
         font-size:calc(100vw/(1920 / 80));
         color:#393637;
         margin-bottom: calc(100vw/(1920/200));
-        margin-left:calc(100vw/(1920/50));
+        margin-left: calc(100vw/(1920/150));
     }
 
-    .menu-image{
-        background-image: url(/img/coffee-munu-comment.png);
-        background-size:cover;
-        width: calc(100vw/(1920/1100));
-        height:calc(100vw/(1920/1500));
-        margin-left:calc(100vw/(1920/10));
+    .food-menu{
+        width: calc(100vw/(1920/1450));
+        height:calc(100vw/(1920/950));
+        margin: 0 auto;
+        float: initial;
+    }
+
+    .food-menu nav{
+        line-height: 7em;
+    }
+
+    .food-menu nav h3{
+        font-size: calc(100vw/(1920 / 70));
+    }
+
+    .food-menu nav ul{
+        font-size: calc(100vw/(1920 / 60));
+    }
+
+    .food-menu nav ul li{
+        font-size: calc(100vw/(1920 / 55));
+    }
+
+    .food-menu-line-spacing-adjustment{
+        display: block;
+        width: calc(100vw/(1920/1450));
+        height: calc(100vw/(1920 / 100));
     }
 
     .menu-cafe-image{
-        background-image: url(/img/coffee-munu-image.png);
+        background-image: url(../img/food-img.png);
         background-size:cover;
-        width: calc(100vw/(1920/650));
-        height:calc(100vw/(1920/1100));
-        margin-left: calc(100vw/(1920/900));
-        margin-top: calc(100vw/(1920/50));
+        width: calc(100vw/(1920/1481));
+        height: calc(100vw/(1920/1554));
+        float: initial;
+        margin: 0 auto;
     }
 
     /* 5枚目　order */
+    .order-font{
+        margin-top: calc(100vw/(1920/400));
+    }
+
     .order-font h2{
-        margin-top: calc(100vw/(1920/50));
+        margin-bottom: calc(100vw/(1920/200));
         font-size:calc(100vw/(1920 / 80));
         color:#393637;
-        margin-left:calc(100vw/(1920/50));
+        margin-left: calc(100vw/(1920/150));
     }
 
     .form-box{
         color:#393637;
-        margin-left:calc(100vw/(1920/50));
+        width: calc(100vw/(1920/1450));
+        margin: 0 auto;
     }
 
     .form-font{
         font-size:calc(100vw/(1920 /90));
         margin-top: calc(100vw/-(1920/200));
+    }
+
+    .form-font span{
+        font-size:calc(100vw/(1920 /70));
     }
 
     .label-box{
@@ -169,14 +198,14 @@
     }
     
     .label-line{
-        font-size: calc(100vw/(1920/90));
-        width: calc(100vw/(1920 / 400));
+        font-size: calc(100vw/(1920/60));
+        width: calc(100vw/(1920 /350));
         height:calc(100vw/(1920 / 100));
         float: left;
     }
     .label-line2{
-        font-size: calc(100vw/(1920/80));
-        width: calc(100vw/(1920 /1200));
+        font-size: calc(100vw/(1920/60));
+        width: calc(100vw/(1920 /1100));
         height:calc(100vw/(1920 /200));
         float: right;
         margin-bottom:calc(100vw/(1920 / 20));
@@ -185,7 +214,7 @@
     }
 
     .label-line3{
-        font-size: calc(100vw/(1920/80));
+        font-size: calc(100vw/(1920/70));
         width: calc(100vw/(1920 / 1000));
         height:calc(100vw/(1920 / 200));
         float: right;
@@ -194,7 +223,7 @@
     }
     
     .label-comment{
-        font-size: calc(100vw/(1920/80));
+        font-size: calc(100vw/(1920/55));
         width: calc(100vw/(1920 / 1200));
         height:calc(100vw/(1920 / 500));
         float: right;
@@ -208,7 +237,7 @@
     .contact-font{
         font-size:calc(100vw/(1920 / 80));
         color:#393637;
-        margin-top: calc(100vw/(1920/500));
+        margin-top: calc(100vw/(1920/400));
     }
 
     .contact-font h2{
@@ -217,35 +246,42 @@
         margin-left:calc(100vw/(1920/150));
     }
 
+    .ggrmaps{
+        width: calc(100vw/(1920/1400));
+        margin: auto;
+    }
+
     .ggrmaps iframe{
-        margin-top: calc(100vw/(1920/100));
-        margin-bottom: calc(100vw/(1920/130));
-        margin-left:calc(100vw/(1920/100));
-        width: calc(100vw/(1920/1550));
-        height: calc(100vw/(1920/1400));
+        margin-bottom: initial;
+        margin-left:initial;
+        width: calc(100vw/(1920/1400));
+        height: calc(100vw/(1920/1200));
     }
     
     
     /*会社情報*/
     .company-name{
         margin-top: calc(100vw/(1920/200));
-        font-size: calc(100vw/(1920 / 80));
+        font-size: calc(100vw/(1920 / 55));
+        margin-bottom: calc(100vw/(1920/100));
+        margin-right: initial;
+        float: initial;
     }
+
     .company-box{        
-        margin-bottom: calc(100vw/(1920/120));
+        margin-bottom: calc(100vw/(1920/20));
     }
+
     .concept-name{
+        font-size: calc(100vw/(1920 / 70));
         color:#579444;
     }
 
-    .addres-name{
-        padding-bottom: calc(100vw/(1920/30));
+    .cafe-name{
+        font-size: calc(100vw/(1920 / 60));
     }
 
     .copyright {
-        float:right;
-        margin-top:calc(100vw/(1920/-2));
         color:white;
-        margin-right:calc(100vw/(1920/10));
     }
 }
