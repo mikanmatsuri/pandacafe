@@ -240,6 +240,7 @@ label, input, textarea, select, option {
     padding: calc(100vw/(1920 / 5));
 }
 
+
 /*4枚目*/
 
 .menu-font{
@@ -335,17 +336,14 @@ label, input, textarea, select, option {
 
 .label-line{
     width: calc(100vw/(1920 / 400));
-    height:calc(100vw/(1920 / 60));
     float: left;
     margin-top:calc(100vw/(1920 / 40));
-    margin-right:calc(100vw/(1920/-50));
 }
 
 .label-line2{
     width: calc(100vw/(1920 / 600));
-    height:calc(100vw/(1920 / 60));
     float: left;
-    padding: 0.5em;
+    padding: 0.2em;
     margin-left:calc(100vw/(1920 / 100));
     margin-bottom:calc(100vw/(1920 / 40));
 }
@@ -358,6 +356,7 @@ label, input, textarea, select, option {
     float: left;
     margin-left:calc(100vw/(1920 / 100));
     margin-bottom:calc(100vw/(1920 / 40));
+    font-size: calc(100vw/(1920 / 30));
 }
 
 .label-comment{
@@ -369,10 +368,10 @@ label, input, textarea, select, option {
 }
 
 /*formに色付け1*/
-.label-box input[type='text'] ,input[type='email'],input[type='tel']{
+.label-box input[type='text'], input[type='email'], input[type='tel']{
     font-family:sans-serif;
     box-sizing: border-box;
-	padding: 0.5em;
+	padding: 0.2em 0.2em 0.2em 0.6em;
     transition: 0.3s;
     letter-spacing:calc(100vw/(1920 / 2));
 	border: 1px solid #393637;
@@ -462,9 +461,17 @@ textarea:focus {
 .company-name{
     font-size: calc(100vw/(1920 / 26));
     float: right;
-    margin-top: calc(100vw/(1920/150));
+    margin-top: calc(100vw/(1920/60));
     margin-right: calc(100vw/(1920/200));
     line-height: 1.7em;
+}
+
+.tel-nunber span,.open-hour span,.holiday span,.parking span{
+    float: left;
+}
+
+.blank-adjustment{
+    padding-left: calc(100vw/(1920/60));
 }
 
 .concept-name{
@@ -516,4 +523,35 @@ textarea:focus {
 .reservation-error{
     display: none;
     color: red;
+}
+
+
+
+
+
+
+#document.timeline-Widget {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+div.timeline-Widget {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.timeline {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* ここから下を追記 */
+.SandboxRoot.env-bp-970 .timeline-Tweet-text {
+    font-size: 10.5pt !important;
+    line-height: 14pt!important;
+}
+
+.SandboxRoot.env-bp-820 .timeline-Tweet-text {
+    font-size: 10.5pt !important;
+    line-height: 14pt!important;
 }

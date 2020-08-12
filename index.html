@@ -13,7 +13,7 @@
     </head>
 
     <body>
-    <div class="smartphone-top-menu-list" id="smartphone-menu-list"><!--スマホのメニュー-->
+    <div class="smartphone-top-menu-list" id="smartphone-menu-list" style="display: none"><!--スマホのメニュー-->
         <nav>
             <ul>
                 <li>
@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="js-menu-button-click">
+                    <a href="#" class="js-menu-button-click js-switch-language">
                         <span class="text-jp">Language</span>
                         <span class="text-en">言語切替</span>
                     </a>
@@ -98,7 +98,7 @@
         </ul>
         <ul class="lang-con">
             <li>
-                <a href="#">
+                <a href="#" class="js-switch-language">
                     <span class="text-jp">Language</span>
                     <span class="text-en">言語切替</span>
                 </a>
@@ -120,7 +120,8 @@
             </div>
             <div class ="green-flower">
                 <div class="panda-comment">
-                    <span class ="cheff-comment">こんにちは。店長の笹パンダです。<br>
+                    <span class ="cheff-comment text-jp">
+                        こんにちは。店長の笹パンダです。<br>
                         いつも当店をご利用頂き、ありがとうございます。<br><br>
                         当店のコンセプトはパンダの為のパンダによるcafeであります。<br>
                         私たちの主食といえば皆様ご存じの通り笹ですが、<br>
@@ -128,6 +129,15 @@
                         私たちは、そういった我々の過酷な現実と現状を打開し、<br>
                         また、今後も皆様にcafeを楽しんで頂けるように努めていき、<br>
                         panda社会の問題と食の情報を発信してまいります。</span>
+                    <span class ="cheff-comment text-en">
+                        Hello. This is the manager's bamboo panda.<br>
+                        Thank you for using our shop.<br><br>
+                        Our concept is a panda cafe for pandas.<br>
+                        As we all know, our staple food is bamboo grass,<br>
+                        but it is a well-known fact that bamboo grass threatens our lives.<br>
+                        We will break through these harsh reality and our current situation, <br>
+                        and will continue to strive to make everyone enjoy the cafe in the future,<br>
+                        and we will continue to disseminate information on food issues and food in panda society.</span>
                     <br/><br/>
                 </div>
                 <div class="about-panda"></div>
@@ -163,7 +173,8 @@
             </div>
             <div class="food-menu">
                 <nav>
-                    <h3>本日のおすすめ</h3>
+                    <h3 class="text-jp">本日のおすすめ</h3>
+                    <h3 class="text-en">Today's recommendation</h3>
                     <ul>
                         Drink
                         <li>panda tea     ・・・500</li>
@@ -194,28 +205,41 @@
             <!-- formの作成 -->
             <div class="form-box">
                 <div class="form-font">
-                    <span>ご予約はこちらから！</span>
+                    <span class="text-jp">ご予約はこちらから！</span>
+                    <span class="text-en">Click here to make a reservation!</span>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">お名前</label>
+                    <label class="label-line">
+                        <span class="text-jp">お名前</span>
+                        <span class="text-en">Name</span>
+                    </label>
                     <input id="reservation-name" class="label-line2" name="yourname" type="text" value="" placeholder="山田　太郎">
                     <div id="reservation-name-error" class="reservation-error">間違っています</div>
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">メール</label>
+                    <label class="label-line">
+                        <span class="text-jp">メール</span>
+                        <span class="text-en">Mail</span>
+                    </label>
                     <input class="label-line2" id="reservation-mail" name="mail" type="email" value="" placeholder="sample.sample.com">
                     <div id="reservation-mail-error" class="reservation-error">間違っています</div>
                     <div class="clear"></div>
                 </div>
 
                 <div class="label-box">
-                    <label class="label-line">電話番号</label>
+                    <label class="label-line">
+                        <span class="text-jp">電話番号</span>
+                        <span class="text-en">Phone number</span>
+                    </label>
                     <input class="label-line2" name="tel" type="tel" value="" placeholder="080-1234-5678">
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">予約日時</label>
+                    <label class="label-line">
+                        <span class="text-jp">予約日時</span>
+                        <span class="text-en">Date & time</span>
+                    </label>
                     <select class="label-line2" name="reseption-date">
                         <option value="選択" selected>選択してください</option>
                         <option value="10:00">10:00</option>
@@ -224,7 +248,10 @@
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">人数</label>
+                    <label class="label-line">
+                        <span class="text-jp">人数</span>
+                        <span class="text-en">People</span>
+                    </label>
                     <select class="label-line2" name="reservation">
                         <option value="選択" selected >選択してください</option>
                         <option value="1人">1人</option>
@@ -236,7 +263,10 @@
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label for="plan-select" class="label-line">プラン</label>
+                    <label for="plan-select" class="label-line">
+                        <span class="text-jp">プラン</span>
+                        <span class="text-en">Plan</span>
+                    </label>
                     <select class="label-line2" name="plan" id="plan-select">
                         <option value="選択" selected>選択してください</option>
                         <option value="yokubari">よくばりコース</option>
@@ -246,12 +276,15 @@
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">備考</label>
+                    <label class="label-line">
+                        <span class="text-jp">備考</span>
+                        <span class="text-en">Remarks</span>
+                    </label>
                     <textarea class="label-comment" name="remarks" placeholder="その他、ご不明点やお問い合わせはこちら"></textarea>
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <input class="label-line3" type="submit" value="送信する" />
+                    <button class="label-line3" type="submit" id="send-push">送信する</button>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -273,25 +306,36 @@
                         <span class="cafe-name">PANDA CAFE</span>
                     </div>
                     <div class="addres-name">
-                        <span>〒xxx-xxxx 東京都 世田谷区 xxxxxxxxx</span>
-                        <span>学芸大学駅から徒歩5分</span>
+                        <span class="text-jp">〒xxx-xxxx 東京都 世田谷区 xxxxxxxxx</span>
+                        <span class="text-en">Xxx-xxxx, Setagaya-ku, Tokyo xxxxxxxxx</span>
+                        <span class="text-jp">学芸大学駅から徒歩5分</span>
+                        <span class="text-en">5 minutes walk from Gakugeidaigaku Station</span>
                     </div>
                     <div class="matome">
                         <div class="tel-nunber">
-                            <span>電話番号</span>
-                            <span>03-xxxx-xxxx</span>
+                            <span class="text-jp">電話番号</span>
+                            <span class="text-en">phone number</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03-xxxx-xxxx</span>
                         </div>
+                        <div class="clear"></div>
                         <div class="open-hour">
-                            <span>営業時間</span>
-                            <span>10:00-18:00</span>
+                            <span class="text-jp">営業時間</span>
+                            <span class="text-en">business hours</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00-18:00</span>
                         </div>
+                        <div class="clear"></div>
                         <div class="holiday">
-                            <span>定休日</span>
-                            <span>水・日</span>
+                            <span class="text-jp">定休日</span>
+                            <span class="text-en">Regular holiday</span>
+                            <span class="text-jp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;水・日曜日</span>
+                            <span class="text-en">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wednesday/Sunday</span>
                         </div>
+                        <div class="clear"></div>
                         <div class="parking">
-                            <span>駐車場</span>
-                            <span>5台有</span>
+                            <span class="text-jp">駐車場</span>
+                            <span class="text-en">Parking</span>
+                            <span class="text-jp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5台有</span>
+                            <span class="text-en">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 units</span>
                         </div>
                     </div>
                 </div>
