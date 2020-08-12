@@ -98,6 +98,10 @@ label, input, textarea, select, option {
     font-size: calc(100vw/(1920/25));
 }
 
+.smartphone-top-menu-list{
+    display: none;
+}
+
 .top-menu li a:hover{
     cursor: pointer;
     color: #549544;
