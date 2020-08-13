@@ -3,9 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Home</title>
-        <meta http-equiv="Cache-Control" content="no-cache">
         <!-- 画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scare=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
         <link rel="icon" href=img/favicon.png>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -14,10 +13,49 @@
     </head>
 
     <body>
-        <!------------------------------ ホーム画面　1枚目 ------------------------------->
+    <div class="smartphone-top-menu-list" id="smartphone-menu-list" style="display: none"><!--スマホのメニュー-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-jump" class="js-menu-button-click">
+                        <span class="text-jp">パンダカフェとは</span>
+                        <span class="text-en">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#menu-jump" class="js-menu-button-click">
+                        <span class="text-jp">お品書き</span>
+                        <span class="text-en">Menu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#order-jump" class="js-menu-button-click">
+                        <span class="text-jp">宴会の予約</span>
+                        <span class="text-en">Order</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#shop-place-jump" class="js-menu-button-click">
+                        <span class="text-jp">所在地</span>
+                        <span class="text-en">Contacts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="js-menu-button-click js-switch-language">
+                        <span class="text-jp">Language</span>
+                        <span class="text-en">言語切替</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+        <!--  ホーム画面　1枚目  -->
         <div class="header-img">
-            <div class="smartphone-top-menu-button"></div>
-            <div class="twetter-top-icon">
+            <div class="smartphone-top-menu-button" id="smartphone-menu-button"></div>
+            <!--スマホのTwitter表示-->
+            <div class="twitter-top-icon">
+                <a href="https://twitter.com/dpm_natsu?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @dpm_natsu</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
         <!--黒い模様-->
@@ -60,7 +98,7 @@
         </ul>
         <ul class="lang-con">
             <li>
-                <a href="#">
+                <a href="#" class="js-switch-language">
                     <span class="text-jp">Language</span>
                     <span class="text-en">言語切替</span>
                 </a>
@@ -79,19 +117,32 @@
             <div class="about-font">
                 <h1 class="page-title" id="about-jump">About</h1>
                 <h2>panda cafeとは</h2>
-                <div class ="green-flower">
-                    <div class="panda-comment">
-                        <span class ="cheff-comment">こんにちは。店長の笹パンダです。<br><br>いつも当店をご利用頂き、ありがとうございます。<br><br><br>当店のコンセプトはパンダの為のパンダによるcafeであります。<br><br>私たちの主食といえば皆様ご存じの通り笹ですが、<br><br>その笹によって我々の命が脅かされているのも周知の事実。<br><br>私たちは、そういった我々の過酷な現実と現状を打開し、<br><br>また、今後も皆様にcafeを楽しんで頂けるように努めていき、<br><br>panda社会の問題と食の情報を発信してまいります。</span>
-                        <br/><br/>
-                        <div class="alignt-right">
-                            <span class="cheff">店長</span>
-                            <span class="cheff-name">笹パンダ</span>
-                        </div>
-                    </div>
-                    <div class="about-panda"></div>
-                    <div class="clear"></div>
+            </div>
+            <div class ="green-flower">
+                <div class="panda-comment">
+                    <span class ="cheff-comment text-jp">
+                        こんにちは。店長の笹パンダです。<br>
+                        いつも当店をご利用頂き、ありがとうございます。<br><br>
+                        当店のコンセプトはパンダの為のパンダによるcafeであります。<br>
+                        私たちの主食といえば皆様ご存じの通り笹ですが、<br>
+                        その笹によって我々の命が脅かされているのも周知の事実。<br>
+                        私たちは、そういった我々の過酷な現実と現状を打開し、<br>
+                        また、今後も皆様にcafeを楽しんで頂けるように努めていき、<br>
+                        panda社会の問題と食の情報を発信してまいります。</span>
+                    <span class ="cheff-comment text-en">
+                        Hello. This is the manager's bamboo panda.<br>
+                        Thank you for using our shop.<br><br>
+                        Our concept is a panda cafe for pandas.<br>
+                        As we all know, our staple food is bamboo grass,<br>
+                        but it is a well-known fact that bamboo grass threatens our lives.<br>
+                        We will break through these harsh reality and our current situation, <br>
+                        and will continue to strive to make everyone enjoy the cafe in the future,<br>
+                        and we will continue to disseminate information on food issues and food in panda society.</span>
+                    <br/><br/>
                 </div>
-            </div>       
+                <div class="about-panda"></div>
+                <div class="clear"></div>
+            </div>
         </div>
         <div class="clear"></div>
 
@@ -102,16 +153,14 @@
                 <h2>お知らせ</h2>
             </div>
             <div class="twitter-style">
-                <blockquote class="twitter-tweet">
-                    <p lang="ja" dir="ltr">
-                        パンダカフェ、本日も10時〜19時まで営業しております。皆様のご来店お待ちしております。
-                    </p>
-                    &mdash; パンダ店長 (@uJFUmo1USomfqa8)
-                    <a href="https://twitter.com/uJFUmo1USomfqa8/status/1224962394880786432?ref_src=twsrc%5Etfw">
-                        February 5, 2020
-                    </a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js"></script>
+                <span class="pc-twitter">
+                    <a class="twitter-timeline" href="https://twitter.com/dpm_natsu?ref_src=twsrc%5Etfw">Tweets by dpm_natsu</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </span>
+                <span class=" smartphone-twitter">
+                    <a href="https://twitter.com/dpm_natsu?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @dpm_natsu</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </span>
             </div>
         </div>
         <div class="clear"></div>
@@ -122,9 +171,27 @@
                 <h1 class="page-title" id="menu-jump">Menu</h1>
                 <h2>お品書き</h2>
             </div>
-            <div class="menu-image"></div>
-            <div class="clear"></div>
+            <div class="food-menu">
+                <nav>
+                    <h3 class="text-jp">本日のおすすめ</h3>
+                    <h3 class="text-en">Today's recommendation</h3>
+                    <ul>
+                        Drink
+                        <li>panda tea     ・・・500</li>
+                        <li>panda cofee   ・・・500</li>
+                    </ul>
+                    <br>
+                    <ul>
+                        Food
+                        <li>panda cake     ・・・500</li>
+                        <li>panda pan   ・・・500</li>
+                        <li>panda sarada   ・・・500</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="food-menu-line-spacing-adjustment"></div>
             <div class="menu-cafe-image"></div>
+            <div class="clear"></div>
         <!--    <div class="menu-flower"></div> -->
         </div>
                 
@@ -138,28 +205,41 @@
             <!-- formの作成 -->
             <div class="form-box">
                 <div class="form-font">
-                    <span>ご予約はこちらから！</span>
+                    <span class="text-jp">ご予約はこちらから！</span>
+                    <span class="text-en">Click here to make a reservation!</span>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">お名前</label>
+                    <label class="label-line">
+                        <span class="text-jp">お名前</span>
+                        <span class="text-en">Name</span>
+                    </label>
                     <input id="reservation-name" class="label-line2" name="yourname" type="text" value="" placeholder="山田　太郎">
                     <div id="reservation-name-error" class="reservation-error">間違っています</div>
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">メール</label>
+                    <label class="label-line">
+                        <span class="text-jp">メール</span>
+                        <span class="text-en">Mail</span>
+                    </label>
                     <input class="label-line2" id="reservation-mail" name="mail" type="email" value="" placeholder="sample.sample.com">
                     <div id="reservation-mail-error" class="reservation-error">間違っています</div>
                     <div class="clear"></div>
                 </div>
 
                 <div class="label-box">
-                    <label class="label-line">電話番号</label>
+                    <label class="label-line">
+                        <span class="text-jp">電話番号</span>
+                        <span class="text-en">Phone number</span>
+                    </label>
                     <input class="label-line2" name="tel" type="tel" value="" placeholder="080-1234-5678">
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">予約日時</label>
+                    <label class="label-line">
+                        <span class="text-jp">予約日時</span>
+                        <span class="text-en">Date & time</span>
+                    </label>
                     <select class="label-line2" name="reseption-date">
                         <option value="選択" selected>選択してください</option>
                         <option value="10:00">10:00</option>
@@ -168,7 +248,10 @@
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">人数</label>
+                    <label class="label-line">
+                        <span class="text-jp">人数</span>
+                        <span class="text-en">People</span>
+                    </label>
                     <select class="label-line2" name="reservation">
                         <option value="選択" selected >選択してください</option>
                         <option value="1人">1人</option>
@@ -180,7 +263,10 @@
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label for="plan-select" class="label-line">プラン</label>
+                    <label for="plan-select" class="label-line">
+                        <span class="text-jp">プラン</span>
+                        <span class="text-en">Plan</span>
+                    </label>
                     <select class="label-line2" name="plan" id="plan-select">
                         <option value="選択" selected>選択してください</option>
                         <option value="yokubari">よくばりコース</option>
@@ -190,12 +276,15 @@
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <label class="label-line">備考</label>
+                    <label class="label-line">
+                        <span class="text-jp">備考</span>
+                        <span class="text-en">Remarks</span>
+                    </label>
                     <textarea class="label-comment" name="remarks" placeholder="その他、ご不明点やお問い合わせはこちら"></textarea>
                     <div class="clear"></div>
                 </div>
                 <div class="label-box">
-                    <input class="label-line3" type="submit" value="送信する" />
+                    <button class="label-line3" type="submit" id="send-push">送信する</button>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -209,26 +298,44 @@
                 <h2>所在地</h2>
             </div>
             <div class="ggrmaps">
-                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.9443806920704!2d139.67465211553804!3d35.62909764043606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f4c6dc7a8ddf%3A0xce87d71ced082924!2z44CSMTU0LTAwMDMg5p2x5Lqs6YO95LiW55Sw6LC35Yy66YeO5rKi77yT5LiB55uu77yZ4oiS77yZIOOCouODvOODjeOCuemHjuayog!5e0!3m2!1sja!2sjp!4v1580302054391!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.95474667587!2d139.6548336!3d35.6588093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6477d02e1e07ae87!2z57695qC55pyo5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1597071727472!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <div class="company-name">
                     <div class="company-box">
-                        <span class="concept-name">CAFE&BACARY</span><br><span class="cafe-name">PANDA CAFE</span>
+                        <span class="concept-name">CAFE&BACARY</span>
+                        <br>
+                        <span class="cafe-name">PANDA CAFE</span>
                     </div>
                     <div class="addres-name">
-                        <span>〒xxx-xxxx 東京都 世田谷区 xxxxxxxxx</span><br><span>学芸大学駅から徒歩5分</span>
+                        <span class="text-jp">〒xxx-xxxx 東京都 世田谷区 xxxxxxxxx</span>
+                        <span class="text-en">Xxx-xxxx, Setagaya-ku, Tokyo xxxxxxxxx</span>
+                        <span class="text-jp">学芸大学駅から徒歩5分</span>
+                        <span class="text-en">5 minutes walk from Gakugeidaigaku Station</span>
                     </div>
                     <div class="matome">
                         <div class="tel-nunber">
-                            <span>電話番号</span><span>03-xxxx-xxxx</span>
+                            <span class="text-jp">電話番号</span>
+                            <span class="text-en">phone number</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03-xxxx-xxxx</span>
                         </div>
+                        <div class="clear"></div>
                         <div class="open-hour">
-                            <span>営業時間</span><span>10:00-18:00</span>
+                            <span class="text-jp">営業時間</span>
+                            <span class="text-en">business hours</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00-18:00</span>
                         </div>
+                        <div class="clear"></div>
                         <div class="holiday">
-                            <span>定休日</span><span>水・日</span>
+                            <span class="text-jp">定休日</span>
+                            <span class="text-en">Regular holiday</span>
+                            <span class="text-jp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;水・日曜日</span>
+                            <span class="text-en">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wednesday/Sunday</span>
                         </div>
+                        <div class="clear"></div>
                         <div class="parking">
-                            <span>駐車場</span><span>5台有</span>
+                            <span class="text-jp">駐車場</span>
+                            <span class="text-en">Parking</span>
+                            <span class="text-jp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5台有</span>
+                            <span class="text-en">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 units</span>
                         </div>
                     </div>
                 </div>
@@ -241,7 +348,7 @@
         <div class ="footer-gradient"></div>
         <footer class="footer-box">
             <div class="footer-logo"></div>
-            <span class="copyright">Copyright 2020 PANDA CAFE All Rights Reserved.</span>
+            <div class="copyright">Copyright 2020 PANDA CAFE All Rights Reserved.</div>
             <div class="clear"></div>
         </footer>
     </body>
